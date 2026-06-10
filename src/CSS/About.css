@@ -96,3 +96,123 @@
 .edu-details {
   color: var(--text-muted);
 }
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-card {
+    padding: 2.5rem 2rem;
+  }
+
+  .about-header {
+    font-size: 1.7rem;
+  }
+
+  .education-header {
+    font-size: 1.4rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .edu-card {
+    padding: 1.3rem 1.5rem;
+  }
+
+  .edu-title {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-card {
+    padding: 2rem 1.2rem;
+    border-radius: 14px;
+  }
+
+  .about-header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .education-header {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .edu-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1.2rem;
+  }
+
+  .edu-icon {
+    align-self: center;
+  }
+
+  .edu-title {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+
+  .edu-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .about-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-header {
+    font-size: 1.3rem;
+  }
+
+  .education-header {
+    font-size: 1.15rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  .edu-card {
+    padding: 1rem;
+  }
+
+  .edu-title {
+    font-size: 1rem;
+  }
+
+  .edu-institute,
+  .edu-details {
+    font-size: 0.85rem;
+  }
+
+  .edu-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}

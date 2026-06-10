@@ -95,7 +95,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,5 +106,129 @@
   max-width: 90%;
   max-height: 85%;
   border-radius: 10px;
-  box-shadow: 0 0 25px rgba(255,255,255,0.2);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   Responsive Certifications
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .certs-section {
+    padding: 30px 15px;
+  }
+
+  .certs-card {
+    padding: 20px;
+  }
+
+  .certs-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .certs-grid {
+    gap: 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .certs-section {
+    padding: 25px 10px;
+  }
+
+  .certs-card {
+    padding: 18px;
+  }
+
+  .certs-card h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .certs-card .lead {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .certs-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tab {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .cert.card {
+    padding: 14px;
+  }
+
+  .cert.card img {
+    height: 180px;
+  }
+
+  .cert.card strong {
+    font-size: 15px;
+  }
+
+  .cert.card .btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .certs-section {
+    padding: 20px 8px;
+  }
+
+  .certs-card {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .certs-card h2 {
+    font-size: 1.25rem;
+  }
+
+  .certs-card .lead {
+    font-size: 0.85rem;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .cert.card {
+    padding: 12px;
+  }
+
+  .cert.card img {
+    height: 160px;
+  }
+
+  .cert.card strong {
+    font-size: 14px;
+  }
+
+  .cert.card .muted {
+    font-size: 12px;
+  }
+
+  .modal img {
+    max-width: 95%;
+    max-height: 80%;
+  }
 }

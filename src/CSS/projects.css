@@ -107,3 +107,123 @@
   background: linear-gradient(90deg, #06b6d4, #0891b2);
   color: #fff;
 }
+/* =========================
+   Responsive Projects Section
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .projects-container {
+    padding: 25px;
+  }
+
+  .projects-title {
+    font-size: 2.1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .project-ss img {
+    height: 180px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 20px 15px;
+  }
+
+  .projects-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .projects-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-card {
+    padding: 14px;
+  }
+
+  .project-ss img {
+    height: 170px;
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .project-desc {
+    font-size: 13px;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 15px 10px;
+  }
+
+  .projects-title {
+    font-size: 1.5rem;
+  }
+
+  .projects-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .project-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .project-ss img {
+    height: 150px;
+  }
+
+  .project-title {
+    font-size: 15px;
+  }
+
+  .project-desc {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .tech-badge {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+  }
+}

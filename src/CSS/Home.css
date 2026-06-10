@@ -67,3 +67,158 @@
   gap: 1.5rem;
   justify-content: center; /* ensures icons are centered */
 }
+/* =========================
+   Responsive Home Section
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .home-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .home-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-info {
+    min-width: auto;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .photo-ring {
+    width: 290px;
+    height: 290px;
+  }
+
+  .photo-frame {
+    width: 260px;
+    height: 260px;
+  }
+
+  .typing-effect {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .photo-container {
+    flex: unset;
+  }
+
+  .photo-ring {
+    width: 250px;
+    height: 250px;
+  }
+
+  .photo-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .typing-effect {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profession-tags {
+    justify-content: center;
+  }
+
+  .profession-tag {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+
+  .info-cards {
+    justify-content: center;
+  }
+
+  .info-card {
+    min-width: 150px;
+    padding: 10px 14px;
+  }
+
+  .quick-links-title {
+    font-size: 1.3rem;
+  }
+
+  .quick-links-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .quick-link-img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .home-section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .home-title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .photo-ring {
+    width: 220px;
+    height: 220px;
+  }
+
+  .photo-frame {
+    width: 190px;
+    height: 190px;
+  }
+
+  .typing-effect {
+    font-size: 0.9rem;
+  }
+
+  .profession-tag {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .quick-links-title {
+    font-size: 1.1rem;
+  }
+
+  .quick-link-img {
+    width: 40px;
+    height: 40px;
+  }
+}
